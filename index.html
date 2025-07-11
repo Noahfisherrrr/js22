@@ -7,6 +7,33 @@
 </head>
 <body>
 
+<!-- Add User Button -->
+<div class="newUser">
+  <button id="addUserBtn">Add New User</button>
+</div>
+
+<!-- Modal -->
+<div id="userModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Add New User</h2>
+    <form id="userForm">
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="personalNumber" placeholder="Personal ID" required />
+      <input type="text" id="phoneNumber" placeholder="Phone Number" required />
+      <input type="text" id="zipCode" placeholder="Zip Code" required />
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- User Table -->
 <table id="users-table">
   <thead>
     <tr>
